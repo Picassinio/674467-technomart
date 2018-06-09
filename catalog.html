@@ -6,8 +6,14 @@
 	</head>
 	<body>
 		<header class="header">
-  					<a class="header-logo">ТЕХНОМАРТ</a>
-  			<!-- Здесь будет форма -->
+  			<a class="header-logo">ТЕХНОМАРТ</a>
+  			<form class="header-search-form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visual-hidden">
+              Поиск
+              <span class="search-image"></span>
+              <input type="search" name="search" placeholder="Поиск">
+            </label> 
+        </form>
   			<ul class="header-buy">
   				<li class="header-buy-bookmarks"><a href="#">Закладки:0</a></li>
   				<li class="header-buy-busket"><a href="#">Корзина:10</a></li>
@@ -16,7 +22,7 @@
   			<h1 class="header-caption">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
   				<a class="header-number" href="tel:+78125550555">+7 (812) 555-05-55</a>
   				<div class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</div>
-  			<!-- Форма? -->
+          <a href="#" class="header-user">Равшан Джамшутович</a>
   			<ul class="header-navigation">
   				<li><a href="#">Мои заказы</a></li>
   				<li><a href="#">Личный кабинет</a></li>
@@ -40,11 +46,35 @@
   				<li>Перфораторы</li>
   			</ul>
   			<h2>ПЕРФОРАТОРЫ</h2>
-  			<!-- форма фильтр -->
-  			<!-- форма сортировка -->
-  			<!-- форма производители -->
-  			<!-- форма питание -->
-  			<a class="show-button" href="#">Показать</a>
+  			<section class="sorting">
+          <p class="sorting-block">ФИЛЬТР:</p>
+          <p>ЦЕНА</p>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <div class="sorting-price">
+              <label class="visual-hidden">
+                Сортировка по цене
+                <input type="range" min="0" max="3000" name="range">
+              </label>
+                <p>0</p>
+                <p>3000</p>
+            </div>
+            <div class="sorting-choose">
+              <h3>ПРОИВОДИТЕЛИ:</h3>
+              <p><input type="checkbox" name="producers" value="BOSCH">BOSCH</p>
+              <p><input type="checkbox" name="producers" value="ИНТЕРСКОЛ">ИНТЕРСКОЛ</p>
+              <p><input type="checkbox" name="producers" value="MAKITA">MAKITA</p>
+              <p><input type="checkbox" name="producers" value="DEWALT">DEWALT</p>
+              <p><input type="checkbox" name="producers" value="HITACHI">HITACHI</p>
+          </div>
+          <div class="sorting-choose">
+            <h3>ПИТАНИЕ:</h3>
+            <p><input type="checkbox" name="supply" value="АККУМУЛЯТОРНЫЕ">АККУМУЛЯТОРНЫЕ</p>
+            <p><input type="checkbox" name="supply" value="СЕТЕВЫЕ">СЕТЕВЫЕ</p>
+          </div>
+          <button type="submit" class="sorting-button" name="sorting-button" value="Показать">ПОКАЗАТЬ</button>
+          </form>
+          </section> 
+  			<!-- не пойму, как сделать сортировку -->
   			<section class="products">
   				<ul class="products-catalog">
   					<li>
@@ -271,6 +301,12 @@
             <a href="htmlacademy.ru">htmlacademy.ru</a>
           </p>
         </footer>
+        <section class="modal modal-bookmarks">
+          <p>Товар добавлен в корзину!</p>
+          <a href="#" class="button bookmarks-checkout">ОФОРМИТЬ ЗАКАЗ</a>
+          <button class="button bookmarks-continue" type="button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+          <button class="modal-close" type="button">закрыть</button>
+        </section>
     </body>
    </html>
    

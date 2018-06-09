@@ -6,8 +6,14 @@
   </head>
   <body>
   		<header class="header">
-  					<a class="header-logo">ТЕХНОМАРТ</a>
-  					  <!-- Здесь будет форма -->
+			<a class="header-logo">ТЕХНОМАРТ</a>
+			<form class="header-search-form" action="https://echo.htmlacademy.ru" method="post">
+			  	<label class="visual-hidden">
+			  		Поиск
+					<span class="search-image"></span>
+			  		<input type="search" name="search" placeholder="Поиск">
+			  	</label> 
+			</form>
   			<ul class="header-buy">
   				<li class="header-buy-bookmarks"><a href="#">Закладки:0</a></li>
   				<li class="header-buy-busket"><a href="#">Корзна:10</a></li>
@@ -243,7 +249,7 @@
           <section class="address">
           	<h3>КОНТАКТЫ</h3>
           	<p>Вы можете забрать товары сами,<br> заехав в наш офис:</p>
-          	<a href="#"><img src="img/map.png" width="300" height="158" alt="карта"></a>
+          	<a href="#"><img src="img/map.png" width="300" height="158" alt="Адрес магазина по адресу ул. Большая конюшенная 19, Санкт-Петербург"></a>
           	<a class="address-contact" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
           </section> 
         </main> 
@@ -281,5 +287,46 @@
         		<a href="htmlacademy.ru">htmlacademy.ru</a>
         	</p>
         </footer>
+        <section class="modal modal-feedback">
+        	<h2 class="visual-hidden">Обратная связь</h2>
+        	<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        		<p>
+        			<label>
+        				Ваше имя:
+        				<input class="feedback-field feedback-name" type="text" name="username" placeholder="Имя Фамилия">
+        			</label>
+        		</p>
+        		<p>
+        			<label>
+        				Ваш e-mail:
+        				<input class="feedback-field feedback-mail" type="email" name="e-mail" placeholder="email@example.com"> 
+        			</label>
+        		</p>
+        		<p>
+        			<label>
+        				Текст письма:
+        				<textarea class="feedback-field feedback-text" placeholder="В свободной форме"></textarea>
+        			</label>
+        		</p>
+        	</form>
+        	<button type="submit" class="button submit">Отправить</button>
+        	<button type="button" class="modal-close">Закрыть</button>
+        </section>
+        <section class="modal modal-bookmarks">
+        	<p>Товар добавлен в корзину!</p>
+        	<a href="#" class="button bookmarks-checkout">ОФОРМИТЬ ЗАКАЗ</a>
+        	<button class="button bookmarks-continue" type="button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+        	<button class="modal-close" type="button">закрыть</button>
+        </section>
+        <section class="modal modal-map">
+        	<h2 class="visual-hidden">Как до нас добраться</h2>
+        	<div>
+        		<img src="img/4.jpg" width="940" height="446" alt="Адрес магазина по адресу ул. Большая конюшенная 19, Санкт-Петербург">
+        	</div>
+        	<button type="button" class="modal-close">Закрыть</button>
+        </section>
+
+
+
   </body>
 </html>
