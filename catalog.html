@@ -47,35 +47,42 @@
   			</ul>
   			<h2>ПЕРФОРАТОРЫ</h2>
   			<section class="sorting">
-          <p class="sorting-block">ФИЛЬТР:</p>
-          <p>ЦЕНА</p>
+          <h3 class="sorting-block">ФИЛЬТР:</h3>
           <form action="https://echo.htmlacademy.ru" method="post">
-            <div class="sorting-price">
+            <fieldset class="sorting-price">
+              <legend>ЦЕНА</legend>
               <label class="visual-hidden">
                 Сортировка по цене
                 <input type="range" min="0" max="3000" name="range">
               </label>
-                <p>0</p>
-                <p>3000</p>
-            </div>
-            <div class="sorting-choose">
-              <h3>ПРОИВОДИТЕЛИ:</h3>
-              <p><input type="checkbox" name="producers" value="BOSCH">BOSCH</p>
-              <p><input type="checkbox" name="producers" value="ИНТЕРСКОЛ">ИНТЕРСКОЛ</p>
-              <p><input type="checkbox" name="producers" value="MAKITA">MAKITA</p>
-              <p><input type="checkbox" name="producers" value="DEWALT">DEWALT</p>
-              <p><input type="checkbox" name="producers" value="HITACHI">HITACHI</p>
-          </div>
-          <div class="sorting-choose">
-            <h3>ПИТАНИЕ:</h3>
-            <p><input type="checkbox" name="supply" value="АККУМУЛЯТОРНЫЕ">АККУМУЛЯТОРНЫЕ</p>
-            <p><input type="checkbox" name="supply" value="СЕТЕВЫЕ">СЕТЕВЫЕ</p>
-          </div>
+                <p><span>0</span>.<span>3000</span></p>
+            </fieldset>
+            <fieldset class="sorting-brand">
+              <legend>ПРОИВОДИТЕЛИ:</legend>
+                <label><input type="checkbox" name="producers" value="BOSCH">BOSCH</label>
+                <label><input type="checkbox" name="producers" value="ИНТЕРСКОЛ">ИНТЕРСКОЛ</label>
+                <label><input type="checkbox" name="producers" value="MAKITA">MAKITA</label>
+                <label><input type="checkbox" name="producers" value="DEWALT">DEWALT</label>
+                <label><input type="checkbox" name="producers" value="HITACHI">HITACHI</label>
+              </fieldset>
+          <fieldset class="sorting-choose">
+            <legend>ПИТАНИЕ:</legend>
+            <label><input type="radio" name="supply" value="АККУМУЛЯТОРНЫЕ">АККУМУЛЯТОРНЫЕ</label>
+            <label><input type="radio" name="supply" value="СЕТЕВЫЕ">СЕТЕВЫЕ</label>
+          </fieldset>
           <button type="submit" class="sorting-button" name="sorting-button" value="Показать">ПОКАЗАТЬ</button>
           </form>
-          </section> 
-  			<!-- не пойму, как сделать сортировку -->
-  			<section class="products">
+        </section>
+        <section>
+          <div>
+            <p>Сортировка:</p>
+            <a href="#">По цене</a>
+            <a href="#">По типу</a>
+            <a href="#">По функционалу</a>
+            <a href="">вверх</a>
+            <a href="#">вниз</a>
+          </div>
+          <div>
   				<ul class="products-catalog">
   					<li>
   					   <article class="products-item">
@@ -245,7 +252,9 @@
                   </div>
                 </article>    
               </li>
-              </ul>
+            </ul>
+          </div>
+            <div>
               <ul class="pagination">
               	<li class="pagination-button">
               		<a href="#">1</a>
@@ -260,6 +269,7 @@
               		<a href="#">СЛЕДУЮУЩАЯ</a>
               	</li> 
               </ul>
+            </div>
           </section>
           <section class="perforstors-about">
           	<h3>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h3>
@@ -304,7 +314,7 @@
         <section class="modal modal-bookmarks">
           <p>Товар добавлен в корзину!</p>
           <a href="#" class="button bookmarks-checkout">ОФОРМИТЬ ЗАКАЗ</a>
-          <button class="button bookmarks-continue" type="button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+          <a href="#" class="button bookmarks-continue">ПРОДОЛЖИТЬ ПОКУПКИ</a>
           <button class="modal-close" type="button">закрыть</button>
         </section>
     </body>
