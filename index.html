@@ -20,8 +20,8 @@
 				  	</label> 
 				</form>
 	  			<ul class="header-buy">
-	  				<li class="header-buy-bookmarks"><a href="#">Закладки:0</a></li>
-	  				<li class="header-buy-busket"><a href="#">Корзина:10</a></li>
+	  				<li class="header-buy-item header-buy-bookmarks"><a href="#">Закладки:0</a></li>
+	  				<li class="header-buy-item header-buy-cart"><a href="#">Корзина:10</a></li>
 	  				<li class="header-buy-order"><a href="#">Оформить заказ</a></li>
 	  			</ul>
   			</div>
@@ -52,13 +52,13 @@
   	<section class="categories">
   		<h2 class="visual-hidden">Категории товаров</h2>
   		<ul class="categories-navigation">
-  			<li class="categories-materials">
+  			<li class="categories-item categories-materials">
   					<p>Материалы</p>
   					<a class="categories-button" href="#">НА ЛЮБОЙ ВКУС</a>
   			</li>
-  			<li class="categories-instrument">
+  			<li class="categories-item categories-instrument">
   					<p>Инструменты</p>
-  					<a class="categories-button" href="#">НА ВСЕ СЛУЧАИ</a>
+  					<a class="categories-item categories-button" href="#">НА ВСЕ СЛУЧАИ</a>
   			</li>
   			<li class="categories-technique">
   					<p>Техника</p>
@@ -68,19 +68,19 @@
   				<div class="slide-first">
   					<h3>ПЕРФОРАТОРЫ</h3>
   					<p>Настоящие мужские игрушки</p>
-  					<a href="catalog.html">Открыть каталог</a>
+  					<a class="red-button" href="catalog.html">Открыть каталог</a>
   				</div>
   				<div class="slide-second">
   					<h3>Дрели</h3>
   					<p>Соседям на радость!</p>
-  					<a href="#">Открыть каталог</a>
+  					<a class="red-button" href="#">Открыть каталог</a>
   				</div>
   			</li>
-  			<li class="categories-discount">
+  			<li class="categories-item categories-discount">
   					<p>Скидки 50%</p>
   					<a class="categories-button" href="#">НА 350 ТОВАРОВ</a>
   			</li>
-  			<li class="categories-delivery">
+  			<li class="categories-item categories-delivery">
   					<p>Доставка</p>
   					<a class="categories-button" href="#">БЕСПЛАТНО</a>
   			</li>
@@ -89,7 +89,7 @@
   		<section class="products">
   			<div class="popular-block">
   				<h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
-  				<a class="popular-button" href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+  				<a class="red-button popular-button" href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
   			</div>
   			<ul class="products-catalog">
   				<li>
@@ -172,7 +172,7 @@
           <section class="producers">
           	<div class="popular-block">
           		<h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
-          		<a class="popular-button" href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a>
+          		<a class="red-button popular-button" href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a>
           	</div>
           	<ul class="producers-catalog">
           		<li class="producers-icon">
@@ -241,7 +241,7 @@
           	<div class="service-3">
           		<h3>Кредит</h3>
           		<p>Залезть в долговую яму стало проще. Кредитные консультанты придут вам на помощь.</p>
-          		<a class="service-application" href="#">ПОДАТЬ ЗАЯВКУ</a>
+          		<a class="red-button service-application" href="#">ПОДАТЬ ЗАЯВКУ</a>
           	</div>
           </section>
           <section class="technomart-about">
@@ -254,27 +254,27 @@
           		<li>Автотрейдинг</li>
           		<li>ЖелДорЭкспедиция</li>
           	</ul>
-          	<a class="about-button" href="company.html">ПОДРОБНЕЕ О КОМПАНИИ</a>
+          	<a class="red-button about-button" href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
           </section>
           <section class="address">
           	<h3>КОНТАКТЫ</h3>
           	<p>Вы можете забрать товары сами,<br> заехав в наш офис:</p>
           	<a href="#"><img src="img/map.png" width="300" height="158" alt="Адрес магазина по адресу ул. Большая конюшенная 19, Санкт-Петербург"></a>
-          	<a class="address-contact" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
+          	<a class="red-button address-contact" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
           </section> 
         </main> 
         <footer class="footer-navigation">
   			<a class="footer-navigation-logo" href="#">ТЕХНОМАРТ</a>
   			<p>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
   			<a class="footer-navigation-number" href="tel:+78125550555">+7 (812) 555-05-55</a>
-  			<ul class="footer-navigation-list">
+  			<ul class="footer-line footer-navigation-list">
   				<li><a href="#">Компания</a></li>
   				<li><a href="#">Новости</a></li>
   				<li><a href="catalog.html">Каталог</a></li>
   				<li><a href="#">Доставка</a></li>
   				<li><a href="#">Контакты</a></li>
   			</ul>
-  			<ul class="footer-navigation-categories">
+  			<ul class="footer-line footer-navigation-categories">
   				<li><a href="#">Материалы</a></li>
   				<li><a href="#">Техника</a></li>
   				<li><a href="#">Инструменты</a></li>
@@ -289,10 +289,10 @@
           		<li><a class="footer-social-button" href="#">Фейсбук</a></li>
           		<li><a class="footer-social-button" href="#">Инстаграм</a></li>
         	</ul>
-        	<p class="footer-contacts">Обратная связь:
+        	<p class="footer-line footer-contacts">Обратная связь:
         		<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         	</p>
-        	<p class="footer-developers">
+        	<p class="footer-line footer-developers">
         		Разработано:
         		<a href="htmlacademy.ru">htmlacademy.ru</a>
         	</p>
@@ -319,7 +319,7 @@
         			</label>
         		</div>
         		<div>
-        			<button type="submit" class="feedback-submit">ОТПРАВИТЬ</button>
+        			<button type="submit" class="red-button feedback-submit">ОТПРАВИТЬ</button>
         			<button class="modal-close" type="button">закрыть</button>
         		</div>
         	</form>
@@ -328,7 +328,7 @@
         	<button class="modal-close" type="button">закрыть</button>
         	<p>Товар добавлен в корзину!</p>
         	<div class="grey">
-	        	<a href="#" class="button bookmarks-checkout">ОФОРМИТЬ ЗАКАЗ</a>
+	        	<a href="#" class="red-button bookmarks-checkout">ОФОРМИТЬ ЗАКАЗ</a>
 	        	<a href="#" class="button bookmarks-continue">ПРОДОЛЖИТЬ ПОКУПКИ</a>
         	</div>
         </section>
