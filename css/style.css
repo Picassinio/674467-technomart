@@ -48,6 +48,8 @@ img {
 .header-top-conteiner {
 	display:flex;
 	min-height:42px;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 .conteiner {
 	width:940px;
@@ -57,22 +59,33 @@ img {
 }
 .header-search {
 	margin:0;
-	margin-right:130px;
-
 } 
 .header-logo {
 	color:#ffffff;
+	font-size: 0;
 
 	width: 220px;
 	height: 47px;
 	background-color:  #ee3643;
 	box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+	position: relative;
 
 	text-align: center;
 }
 .header-logo:hover,
 .header-logo:focus {
 	background-color: #ca2c37;
+}
+.header-logo::before {
+	content: "";
+	background-image: url("../img/svg/invalid-name.svg");
+	background-repeat: no-repeat;
+	position: absolute;
+	top:25%;
+	left:25%;
+
+	width:118px;
+	height:18px;
 }
 .header-logo:active {
   background-color: #ba2732;
@@ -112,17 +125,17 @@ img {
   font-size: 17px;
   font-weight: normal;
   font-style: normal;
-  line-height: 42px;
-  text-align: center;
-  vertical-align: middle;
+  line-height: 18px;
   color: #ffffff;
   text-transform: none;
 }
 .header-buy-item  {
-  width: 150px;
-  height: 100%;
   background-color: #293449;
   display: block;
+  padding-top:14px;
+  padding-bottom: 14px;
+  padding-left:45px;
+  padding-right:28px;
 }
 .header-buy-item:hover,
 .header-buy-item:focus {
@@ -130,6 +143,37 @@ img {
 }
 .header-buy-item:active {
 	background-color: #161d29;
+	color: rgba(255, 255, 255, 0.6);
+}
+.header-buy-bookmarks,
+.header-buy-cart {
+	position: relative;
+}
+.header-buy-bookmarks::before {
+	content: "";
+	position:absolute;
+	background-image: url("../img/svg/icon-bookmark.svg");
+	background-repeat: no-repeat;
+	width:14px;
+	height:16px;
+
+	left:17px;
+	top:14px;
+}
+.header-buy-cart::before {
+	content: "";
+	position:absolute;
+	background-image: url("../img/svg/icon-cart.svg");
+	background-repeat: no-repeat;
+	width:15px;
+	height:15px;
+
+	left:17px;
+	top:14px;
+}
+.header-buy-bookmarks:active::before,
+.header-buy-cart:active::before {
+	opacity:0.5;
 }
 
 .header-buy-order {
@@ -138,12 +182,10 @@ img {
 	font-style: normal;
 	line-height: 18px;
 
-	width:150px;
-	height:100%;
+	padding:15px 20px;
 	background-color: #63a63e;
 	display: block;
 
-	text-align:center;
 	text-transform: none;
 }
 .header-buy-order:hover,
@@ -183,16 +225,26 @@ img {
   font-size: 21px;
   font-weight: normal;
   font-style: normal;
-  line-height:45px;
+  line-height:21px;
   color: #ee3643;
-  text-align: center;
-  vertical-align: middle;
-
-  width: 100%;
-  min-height: 45px;
+	
   border: solid 3px #ffffff;
-  display: block;
+  padding:9px;
+  padding-left:74px;
+  padding-right:45px;
 
+  position: relative;
+}
+.header-number::before {
+	content: "";
+	background-image: url("../img/svg/icon-phone.svg");
+	background-repeat:no-repeat;
+
+	width:19px;
+	height:19px;
+	position:absolute;
+	top:12px;
+	left:15px;
 }
 .header-address {
 	font-size: 14px;
