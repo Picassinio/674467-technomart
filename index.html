@@ -12,12 +12,16 @@
   		<header class="header">
   			<div class="header-top">
   				<div class="conteiner header-top-conteiner">
-					<a class="header-logo" href="#">ТЕХНОМАРТ</a>
-					<form class="header-search" action="https://echo.htmlacademy.ru" method="post">
-							<span class="search-image"></span>
-					  		<input id="form-search" type="search" name="search" placeholder="Поиск">
-					  		<label for="form-search" class="visual-hidden">Поиск</label>
-					</form>
+  					<div class="header-top-inner">
+						<a class="header-logo" href="#">ТЕХНОМАРТ</a>
+						<form class="header-search" action="https://echo.htmlacademy.ru" method="post">
+							<label for="label-search">
+								<span class="visually-hidden">Поиск</span>
+							</label>
+							<button type="submit" id="label-search"><span class="visually-hidden">Искать</span></button>
+						  	<input type="search" name="search" placeholder="Поиск">
+						</form>
+					</div>
 		  			<ul class="header-buy">
 		  				<li><a class="header-buy-item header-buy-bookmarks" href="#"><span>Закладки:</span><span> 0</span></a></li>
 		  				<li><a class="header-buy-item header-buy-cart" href="#"><span>Корзина:</span><span> 10</span></a></li>
@@ -55,9 +59,9 @@
 			</div>
   	</header>
   	<main>
-	  	<h2 class="visual-hidden">Услуги магазина</h2>
+	  	<h2 class="visually-hidden">Услуги магазина</h2>
 	  	<section class="conteiner categories">
-	  		<h2 class="visual-hidden">Категории товаров</h2>
+	  		<h2 class="visually-hidden">Категории товаров</h2>
 	  		<ul class="categories-navigation">
 	  			<li class="categories-item categories-materials">
 	  					<p>Материалы</p>
@@ -72,6 +76,8 @@
 	  					<a class="categories-button" href="#">ДЛЯ СТРОЙКИ</a>
 	  			</li>
 	  			<li class="slider">
+	  				<button class="slide-switch slide-left">предыдущий слайд</button>
+	  				<button class="slide-switch slide-right">следующий слайд</button>
 	  				<div class="slide-first">
 	  					<div class="slider-text">
 		  					<h3>Дрели</h3>
@@ -234,7 +240,7 @@
 		          	   Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 			        <div class="service-conteiner">
 			          	<ul class="service-list">
-			          		<li>Доставка</li>
+			          		<li class="service-active">Доставка</li>
 			          		<li>Гарантия</li>
 			          		<li>Кредит</li>
 			          	</ul>
@@ -246,7 +252,7 @@
 			          	</div>
 			          	<div class="service-2">
 			          		<h3>Гарантия</h3>
-			          		<p>Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгоранием,<br> вы всегда можете быть уверенными в нашей гарантии. Мы обменяем сгоревший товар на новый.<br> Дом уж восстановите как-нибудь сами.</p>
+			          		<p>Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверенными в нашей гарантии. Мы обменяем сгоревший товар на новый.<br> Дом уж восстановите как-нибудь сами.</p>
 			          	</div>
 			          	<div class="service-3">
 			          		<h3>Кредит</h3>
@@ -259,7 +265,7 @@
 	          <div class="conteiner conteiner-2">
 		          <section class="technomart-about">
 		          	<h3>КОМПАНИЯ "ТЕХНОМАРТ"</h3>
-		          	<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br> строительсва не оставит равнодушным любителей сэкономить на гастербайтерах.</p>
+		          	<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительсва не оставит равнодушным любителей сэкономить на гастербайтерах.</p>
 		          	<p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
 		          	   Техномарт работает со многими транспортными компаниями:</p>
 		          	<ul class="transport-company">
@@ -323,9 +329,9 @@
 	        </div>
         </footer>
         <section class="modal modal-feedback">
-        	<h2 class="visual-hidden">Обратная связь</h2>
+        	<h2 class="visually-hidden">Обратная связь</h2>
         	<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        		<button class="modal-close" type="button">закрыть</button>
+        		<button class="modal-close" type="button"><span class="visually-hidden"> закрыть</span></button>
         		<div class="feedback-wrap">
 	        		<div class="feedback-conteiner">
 		        		<div>
@@ -354,7 +360,7 @@
         	</form>
         </section>
         <section class="modal modal-bookmarks">
-        	<button class="modal-close" type="button">закрыть</button>
+        	<button class="modal-close" type="button"><span class="visually-hidden">закрыть</span></button>
         	<p>Товар добавлен в корзину!</p>
         	<div class="grey">
 	        	<a href="#" class="red-button bookmarks-checkout">ОФОРМИТЬ ЗАКАЗ</a>
@@ -362,11 +368,11 @@
         	</div>
         </section>
         <section class="modal modal-map">
-        	<h2 class="visual-hidden">Как до нас добраться</h2>
+        	<h2 class="visually-hidden">Как до нас добраться</h2>
         	<div>
         		<img src="img/4.jpg" width="940" height="446" alt="Адрес магазина по адресу ул. Большая конюшенная 19, Санкт-Петербург">
         	</div>
-        	<button class="modal-close" type="button">закрыть</button>
+        	<button class="modal-close" type="button"><span class="visually-hidden">закрыть</span></button>
         </section>
 
 
