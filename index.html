@@ -139,7 +139,7 @@
 	              			<span class="price-current">25500 Р.</span>
 	              			<div class="products-buy">
 		              			<a href="#" class="products-buy-button">Купить</a>
-		              			<a href="#" class="products-buy-button">В закладки</a>
+		              			<a href="#" class=".products-buy-button bookmarks-button">В закладки</a>
 		              		</div>
 		              	</div>
 	              	</li>
@@ -156,7 +156,7 @@
 		              		<span class="price-current">15500 Р.</span>
 		              		<div class="products-buy">
 		              			<a href="#" class="products-buy-button">Купить</a>
-		              			<a href="#" class="products-buy-button">В закладки</a>
+		              			<a href="#" class="products-buy-button bookmarks-button">В закладки</a>
 		              		</div>
 		              	</div>
 	              	</li>
@@ -173,7 +173,7 @@
 		              			<span class="price-current">25500 Р.</span>
 			              		<div class="products-buy">
 			              			<a href="#" class="products-buy-button">Купить</a>
-			              			<a href="#" class="products-buy-button">В закладки</a>
+			              			<a href="#" class="products-buy-button bookmarks-button">В закладки</a>
 			              		</div>	
 			             </div>
 	              	</li>
@@ -189,7 +189,7 @@
 		              		<span class="price-current" href="#">12500 Р.</span>
 		              		<div class="products-buy">
 		              			<a href="#" class="products-buy-button">Купить</a>
-		              			<a href="#" class="products-buy-button">В закладки</a>
+		              			<a href="#" class="products-buy-button bookmarks-button">В закладки</a>
 		              		</div>
 		              	</div>	
 	              	</li>
@@ -288,7 +288,7 @@
 		          <section class="address">
 		          	<h3>КОНТАКТЫ</h3>
 		          	<p>Вы можете забрать товары сами, заехав в наш офис:</p>
-		          	<a href="#"><img src="img/map.png" width="300" height="158" alt="Адрес магазина по адресу ул. Большая конюшенная 19, Санкт-Петербург"></a>
+		          	<a href="#" class="button-modal-map"><img src="img/map.png" width="300" height="158" alt="Адрес магазина по адресу ул. Большая конюшенная 19, Санкт-Петербург"></a>
 		          	<a class="red-button address-contact" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
 		          </section> 
 		      </div>
@@ -346,13 +346,13 @@
 		        		<div>
 		        			<label>
 		        				<span>Ваше имя:</span>
-		        				<input class="feedback-field feedback-name" type="text" name="username" placeholder="Имя Фамилия" required>
+		        				<input class="feedback-field feedback-name" type="text" name="username" placeholder="Имя Фамилия">
 		        			</label>
 		        		</div>
 		        		<div>
 		        			<label>
 		        				<span>Ваш e-mail:</span>
-		        				<input class="feedback-field feedback-mail" type="email" name="e-mail" placeholder="email@example.com" required> 
+		        				<input class="feedback-field feedback-mail" type="email" name="e-mail" placeholder="email@example.com"> 
 		        			</label>
 		        		</div>
 		        	</div>
@@ -378,6 +378,7 @@
         </section>
         <section class="modal modal-map">
         	<h2 class="visually-hidden">Как до нас добраться</h2>
+        	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6097932605612!2d30.32273997589924!3d59.93861682816589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1530436411890" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
         	<div>
         		<img src="img/4.jpg" width="940" height="446" alt="Адрес магазина по адресу ул. Большая конюшенная 19, Санкт-Петербург">
         	</div>
@@ -385,6 +386,8 @@
         </section>
 
 
-
+	   <script src="js/feedback.js"></script>
+	   <script src="js/map.js"></script>
+	   <script src="js/modal-bookmarks.js"></script>
   </body>
 </html>

@@ -859,7 +859,7 @@ input[type="radio"].visually-hidden {
 .products-buy a:nth-child(1):hover::before {
 	opacity:1;
 }
-.products-buy a:nth-child(2) {
+.bookmarks-button {
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -873,10 +873,10 @@ input[type="radio"].visually-hidden {
 
   border: solid 3px #63a63e;
 }
-.products-buy a:nth-child(2):hover {
+.bookmarks-button:hover {
 	border: solid 3px #32425c;
 }
-.products-buy a:nth-child(2):active {
+.bookmarks-button:active {
 	color: rgba(50, 66, 92, 0.3);
 
 	border: solid 3px rgb(50,66,92,0.3);
@@ -1417,6 +1417,64 @@ input[type="radio"].visually-hidden {
 	box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
 	background-color: #ffffff;
 	border-top: 7px solid #FF5257;
+
+	display: none;
+}
+.modal-show {
+	display: block;
+
+	animation: bounce 0.6s;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+.modal-error {
+  animation: shake 0.6s;
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+.modal-feedback {
+  width: 620px;
+
+  margin-left:-310px;
+
+  top:25%;
+  left:50%;
+
+  box-sizing:border-box;
 }
 input[type="text"].feedback-field::-webkit-input-placeholder,
 input[type="email"].feedback-field::-webkit-input-placeholder,
@@ -1429,25 +1487,14 @@ input[type="text"].feedback-field::-moz-placeholder,
   color: #a9a9a9;
 }
 input[type="text"].feedback-field:-ms-input-placeholder,
-input[type="mail"].feedback-field:-ms-input-placeholder,
+input[type="email"].feedback-field:-ms-input-placeholder,
 textarea.feedback-field:-ms-input-placeholder { /* IE 10+ */
   color: #a9a9a9;
 }
 input[type="text"].feedback-field:-moz-placeholder,
-input[type="text"].feedback-field:-moz-placeholder,
+input[type="email"].feedback-field:-moz-placeholder,
 textarea.feedback-field:-moz-placeholder { /* Firefox 18- */
   color: #a9a9a9;
-}
-.modal-feedback {
-  width: 620px;
-
-  margin-left:-310px;
-
-  top:25%;
-  left:50%;
-
-  box-sizing:border-box;
-  display: none;
 }
 .modal-close {
 	position: absolute;
@@ -1575,8 +1622,6 @@ textarea.feedback-field:-moz-placeholder { /* Firefox 18- */
   top:25%;
   left:50%;
   margin-left:-310px;
-
-  display: none;
 }
 .modal-bookmarks p {
   font-size: 30px;
@@ -1656,8 +1701,20 @@ textarea.feedback-field:-moz-placeholder { /* Firefox 18- */
 
 	top:50%;
 	left:50%;
+}
+.modal-map div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 
-	display: none;
+  margin: 0;
+}
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
+
+  border: none;
 }
 
 
@@ -2214,6 +2271,6 @@ main ul+h2 {
   color: #000000;
 
   text-transform: none;
-}
+
 
 
