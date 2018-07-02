@@ -1,4 +1,4 @@
-var bookMarksLink = document.querySelectorAll(".bookmarks-button");
+var bookMarksLink = document.querySelectorAll(".products-buy-button");
 var bookMarksPopup = document.querySelector(".modal-bookmarks");
 
 
