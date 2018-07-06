@@ -58,7 +58,7 @@ input[type="radio"].visually-hidden {
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex;
-	min-height:42px;
+	min-heght:42px;
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
@@ -188,6 +188,8 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   color: #ffffff;
   text-transform: none;
+
+  height:100%;
 }
 .header-buy-item  {
   background-color: #293449;
@@ -509,7 +511,7 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   
   display: block;
-  background-color: rgb(0,0,0,0.1);
+  background-color: rgba(0,0,0,0.1);
   border-radius: 3px;
 
   padding-top:11px;
@@ -519,11 +521,11 @@ input[type="radio"].visually-hidden {
 }
 .categories-button:hover,
 .categories-button:focus {
-	background-color: rgb(0,0,0,0.2);
+	background-color: rgba(0,0,0,0.2);
 	outline: none;
 }
 .categories-button:active {
-	background-color: rgb(0,0,0,0.3);
+	background-color: rgba(0,0,0,0.3);
 }
 .categories-item {
 	width: 300px;
@@ -619,7 +621,7 @@ input[type="radio"].visually-hidden {
 
 	width:28px;
 	height:28px;
-	background-color: rgb(255,255,255,0);
+	background-color: transparent;
 	border:none;
 	border-left:3px solid #fff;
 	border-bottom: 3px solid #fff;
@@ -890,16 +892,15 @@ input[type="radio"].visually-hidden {
 
 	display: flex;
 
-	margin-bottom:15px;
 	padding-right: 17px;
 }
 .img-bosch9000 {
-	padding:0;
-	padding-top:10px;
-	margin-bottom: 5px;
+	padding-left:18px;
+	
 }
 .products-img img {
 	margin: auto;
+	margin-top:40px;
 }
 .products-description {
 	display: -webkit-box;
@@ -916,7 +917,10 @@ input[type="radio"].visually-hidden {
 	    -ms-flex-align: center;
 	        align-items: center;
 
-	min-height:120px;
+	height:100%;
+
+	padding: 20px 10px;
+	padding-top: 15px;
 }
 .products-name {
   font-family: "PT Sans", Arial, sans-serif;
@@ -936,7 +940,7 @@ input[type="radio"].visually-hidden {
   text-transform: none;
 
   margin:0;
-  margin-bottom: 12px;
+  margin-bottom: auto;
 }
 .old-price {
   font-family: "PT Sans", Arial, sans-serif;
@@ -991,6 +995,7 @@ input[type="radio"].visually-hidden {
 
 	position:absolute;
 	top:44px;
+	left:43px;
 }
 .products-buy-button {
 	width:135px;
@@ -1092,9 +1097,12 @@ input[type="radio"].visually-hidden {
 }
 .producers-icon {
 	width:220px;
+	margin-bottom: 20px;
+
+	min-height: 145px;
 }
 .producers-icon a {
-  min-height: 143px;
+  height: 100%;
   background-color: #ffffff;
   border: solid 1px #eaeaea;
   display: -webkit-box;
@@ -1103,7 +1111,6 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 20px;
 }
 .producers-icon a:hover,
 .producers-icon a:focus {
@@ -2054,6 +2061,10 @@ textarea.feedback-field:-moz-placeholder { /* Firefox 18- */
 
   border: none;
 }
+
+
+
+/*Уникальные стили каталога*/
 .header-catalog {
 	margin-bottom:20px;
 }
@@ -2465,6 +2476,8 @@ main ul+h2 {
           box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
   z-index: 3;
+
+  top:30px;
 }
 .range-toggle:hover {
 	background-color:#00CB75; 
