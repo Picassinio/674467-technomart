@@ -13,7 +13,7 @@ var mapLink = document.querySelector(".button-modal-map");
 var mapPopup = document.querySelector(".modal-map");
 var mapClose = mapPopup.querySelector(".modal-close");
 
-var bookMarksLink = document.querySelectorAll(".products-buy-button");
+var bookMarksLink = document.querySelectorAll(".cart-button");
 var bookMarksPopup = document.querySelector(".modal-bookmarks");
 var bookMarksClose = bookMarksPopup.querySelector(".modal-close");
 
