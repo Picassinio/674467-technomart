@@ -3125,13 +3125,6 @@ main ul+h2 {
   padding-bottom: 69px;
 }
 
-.perforators-about-container {
-  width: 940px;
-  padding-left: 42px;
-  padding-right: 42px;
-  margin: auto;
-}
-
 .perforators-about h3 {
   font-size: 30px;
   font-weight: normal;
@@ -3140,7 +3133,7 @@ main ul+h2 {
   color: #000000;
 
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }
 
 .perforators-about p {
